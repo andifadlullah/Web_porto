@@ -15,9 +15,10 @@
     width: 100%;
     padding: 0;
 }
-html {
+
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 
 /* NAVIGATION */
@@ -210,54 +211,7 @@ a {
 }
 /*END INDEX HTML*/
 
-
-/* About Section */
-
-.about{
-    background: transparent !important;
-}
-
-#about h1 li{
-    padding-left: 3px;
-    font-size: 1.5rem;
-    color: rgb(218, 218, 218);
-    border: 3px (108, 108, 108); /* Garis tepi putus-putus berwarna biru */
-    padding: 6px ;
-    border-radius: 8px; /* Membuat sudut border melengkung */
-    background-color: rgb(107, 107, 107); /* Warna latar belakang */
-    width: fit-content; /* Menyesuaikan lebar dengan isi teks */
-    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1);
-}
-
-#about ul {
-    list-style: none;
-    padding: 0;
-}
-
-#about li button{
-    font-size: 1rem;
-    background: #737373;
-    padding: 2px 15px;
-    margin: 5px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: rgb(218, 218, 218);
-}
-#button.about{
-    margin-left: 10px;
-}
-
-
-/* Responsif untuk layar kecil (HP) */
-@media screen and (max-width: 768px) {
-    #about h1 {
-        font-size: 1.5rem;
-    }
-    #about li {
-        font-size: 1rem;
-        padding: 8px;
-    }
-}
+/* BURGER BUTTON */
 .offcanvas-body .navbar-nav {
     align-items: flex-start; /* Menyusun item ke kiri */
     text-align: left; /* Pastikan teks sejajar kiri */
@@ -265,9 +219,10 @@ a {
 .offcanvas-body .nav-link {
     padding-left: 10px; /* Beri sedikit padding agar lebih rapi */
 }
+/* BURGER BUTTON SELESAI*/
+
 
 /*skill section*/
-
 .container-footer{
     display: flex;
     justify-content: center;
@@ -278,10 +233,10 @@ a {
     
 }
 .a-footer img {
-  width: 50px;
-  height: auto;
-  margin: 0 8px;
-  transition: 0.3s ease;
+    width: 50px;
+    height: auto;
+    margin: 0 8px;
+    transition: 0.3s ease;
 }
 
 /* --- iPhone kecil (SE, 5, 6, 7, 8) 320px --- */
@@ -331,3 +286,44 @@ a {
     margin: 0 7px;
   }
 }
+
+/* halaman About Section */
+
+.About{
+    background: transparent !important;
+}
+
+.About-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;   /* rata tengah secara vertical */
+    height: 100vh; 
+}
+#About li button{
+    font-size: 1rem;
+    background: #737373;
+    padding: 2px 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: rgb(218, 218, 218);
+    display: flex;           /* pakai flexbox */
+    justify-content: center; /* rata tengah horizontal */
+    align-items: center;     /* rata tengah vertical */
+    text-align: center;      /* kalau teks panjang, tetap rata tengah */
+    width: 100%;             /* biar tombol memenuhi lebar parent <li> */
+}
+
+#About ul {
+  list-style: none;   /* hilangkan bullet */
+  padding-left: 0;    /* hilangkan padding default */
+}
+
+/* Responsif untuk layar kecil (HP) */
+@media screen and (max-width: 768px) {
+    #about li {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+/* halaman about selesai*/

@@ -64,12 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
 // Burger menu
 document.addEventListener("DOMContentLoaded", function () {
     const offcanvasElement = document.getElementById("offcanvasDarkNavbar");
-    const menuItems = document.querySelectorAll(".nav-link"); // Sesuaikan dengan class item menu
+    const menuItems = document.querySelectorAll(".nav-link"); // Semua item menu
 
     menuItems.forEach(item => {
         item.addEventListener("click", function () {
-            let offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
-            offcanvas.hide(); // Menutup offcanvas
+            // Biarkan tetap terbuka, jangan hide
+            console.log("Klik menu:", this.textContent);
         });
     });
 });
